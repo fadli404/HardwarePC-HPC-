@@ -4,28 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tutor"
-    android:background="@color/merah">
+    android:background="@color/merah"
+    tools:context=".Tutor">
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/page_tutor"
-        android:layout_width="match_parent"
-        android:layout_height="316dp"
-        android:layout_marginTop="200dp"/>
+        android:id="@+id/screen_viewpager"
+        android:layout_below="@+id/tab_indicator"
+        android:layout_width="416dp"
+        android:layout_height="445dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:id="@+id/tmbl_next"
+        android:layout_below="@+id/tmbl_mulai"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/tmbl_mulai"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/tmbl_lanjut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/page_tutor"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="300dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/bulat"
+        android:textColor="@color/putih"
         android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_viewpager"
+        app:layout_constraintVertical_bias="0.787"
         />
+
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/indikator"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tab_indicator"
         android:layout_width="224dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/screen_viewpager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <Button
+        android:layout_below="@+id/screen_viewpager"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="125dp"
-        />
+        android:visibility="invisible"
+        android:id="@+id/tmbl_mulai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/putih"
+        android:background="@drawable/bulat"
+        android:text="MULAI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_viewpager" />
+
 </RelativeLayout>
