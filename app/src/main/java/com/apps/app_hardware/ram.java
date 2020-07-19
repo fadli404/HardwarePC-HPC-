@@ -9,15 +9,15 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MenuUtama extends AppCompatActivity {
+public class ram extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_utama);
+        setContentView(R.layout.activity_ram);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.vga);
+        bottomNavigationView.setSelectedItemId(R.id.ram);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -28,6 +28,8 @@ public class MenuUtama extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.vga:
+                        startActivity(new Intent(getApplicationContext(),MenuUtama.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.processor:
                         startActivity(new Intent(getApplicationContext(),processor.class));
@@ -38,8 +40,6 @@ public class MenuUtama extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.ram:
-                        startActivity(new Intent(getApplicationContext(),ram.class));
-                        overridePendingTransition(0,0);
                         return true;
                 }
                 return false;

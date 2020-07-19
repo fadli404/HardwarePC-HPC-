@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuUtama"></activity>
+        <activity android:name=".ram"></activity>
+        <activity android:name=".psu"></activity>
+        <activity android:name=".processor" />
+        <activity android:name=".mobo" />
+        <activity android:name=".MenuUtama" />
         <activity android:name=".Tutor" />
         <activity android:name=".MainActivity">
             <intent-filter>

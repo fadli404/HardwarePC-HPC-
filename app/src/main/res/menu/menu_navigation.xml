@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/vga"
+        android:title="VGA"
+        android:icon="@drawable/vga"
+        />
+    <item
+        android:id="@+id/mobo"
+        android:title="MOBO"
+        android:icon="@drawable/mobo"
+        />
+    <item
+        android:id="@+id/processor"
+        android:title="Processor"
+        android:icon="@drawable/processor"
+        />
+    <item
+        android:id="@+id/psu"
+        android:title="PSU"
+        android:icon="@drawable/psu"
+        />
+    <item
+        android:id="@+id/ram"
+        android:title="RAM"
+        android:icon="@drawable/ram"
+        />
+</menu>
