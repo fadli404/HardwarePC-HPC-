@@ -9,11 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ram"></activity>
-        <activity android:name=".psu"></activity>
-        <activity android:name=".processor" />
-        <activity android:name=".mobo" />
-        <activity android:name=".MenuUtama" />
+        <activity android:name=".Updatepro"
+            android:parentActivityName=".processor"/>
+        <activity
+            android:name=".AddActivity_pro"
+            android:label="Tambah Processor"
+            android:parentActivityName=".processor" />
+        <activity
+            android:name=".Updatemobo"
+            android:parentActivityName=".mobo" />
+        <activity
+            android:name=".AddActivity_mobo"
+            android:label="Tambah motherboard"
+            android:parentActivityName=".mobo" />
+        <activity
+            android:name=".UpdateActivity"
+            android:parentActivityName=".MenuUtama" />
+        <activity
+            android:name=".AddActivity"
+            android:label="Tambah GPU"
+            android:parentActivityName=".MenuUtama" />
+        <activity
+            android:name=".processor"
+            android:label="My List Processor" />
+        <activity
+            android:name=".mobo"
+            android:label="My List Motherboard" />
+        <activity
+            android:name=".MenuUtama"
+            android:label="My List GPU" />
         <activity android:name=".Tutor" />
         <activity android:name=".MainActivity">
             <intent-filter>

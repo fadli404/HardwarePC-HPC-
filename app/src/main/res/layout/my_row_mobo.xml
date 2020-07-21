@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout_mobo">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/ungu"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/mobo_id_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/putih"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/mobo_nama_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Asus rog strix geforce rtx 2070"
+                android:textAllCaps="true"
+                android:textColor="@color/putih"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/mobo_id_txt"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/jumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="Quantity : "
+                app:layout_constraintStart_toEndOf="@+id/mobo_id_txt"
+                app:layout_constraintTop_toBottomOf="@+id/mobo_nama_txt" />
+
+            <TextView
+                android:id="@+id/mobo_quantity_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="1"
+                app:layout_constraintStart_toEndOf="@+id/jumlah"
+                app:layout_constraintTop_toBottomOf="@+id/mobo_nama_txt" />
+
+            <TextView
+                android:id="@+id/harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Price : "
+                app:layout_constraintStart_toEndOf="@+id/mobo_id_txt"
+                app:layout_constraintTop_toBottomOf="@+id/mobo_quantity_txt" />
+
+            <TextView
+                android:id="@+id/mobo_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:text="10400000"
+                app:layout_constraintStart_toEndOf="@+id/harga"
+                app:layout_constraintTop_toBottomOf="@+id/mobo_quantity_txt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
