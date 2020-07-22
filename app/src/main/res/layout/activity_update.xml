@@ -8,7 +8,7 @@
     android:background="@color/merah">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Update VGA List"
@@ -19,13 +19,14 @@
 
     <EditText
         android:id="@+id/update_nama_input"
-        android:layout_width="321dp"
-        android:layout_height="48dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
-        android:gravity="center"
-        android:hint="Nama"
+        android:gravity="left"
+        android:hint="GPU Name"
+        android:layout_below="@+id/judul"
+        android:layout_toRightOf="@+id/gambar_gpu"
         android:textColor="@color/putih"
         android:textSize="15dp"
         android:inputType="textPersonName"
@@ -33,13 +34,13 @@
 
     <EditText
         android:id="@+id/update_quantity_input"
-        android:layout_width="200dp"
-        android:layout_height="48dp"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
         android:layout_below="@+id/update_nama_input"
-        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/gambar_quantity"
         android:layout_marginTop="10dp"
         android:ems="10"
-        android:gravity="center"
+        android:gravity="left"
         android:hint="Quantity"
         android:inputType="number"
         android:text=""
@@ -47,15 +48,15 @@
 
     <EditText
         android:id="@+id/update_price_input"
-        android:layout_width="200dp"
-        android:layout_height="48dp"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:inputType="number"
         android:hint="Price"
         android:layout_below="@+id/update_quantity_input"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"
-        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/gambar_price"
+        android:gravity="left"
         android:textColor="@color/putih"
         android:text="" />
 
@@ -79,7 +80,35 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/bulat"
-        android:text="Hapus"
+        android:text="Delete"
         android:textColor="@color/putih"/>
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/gambar_gpu"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/judul"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/vga" />
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/gambar_quantity"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/gambar_gpu"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/gambar_quantity" />
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/gambar_price"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/gambar_quantity"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/gambar_price" />
+
 
 </RelativeLayout>

@@ -9,16 +9,16 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/biru"
-        app:cardCornerRadius="20dp"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="7dp"
-        android:layout_marginRight="7dp">
+        android:layout_marginRight="7dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:elevation="0dp"
+        app:cardElevation="0dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="91dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:padding="5dp">
 
             <TextView
@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="2dp"
-                android:text="Quantity : "
+                android:text="Quantity      : "
                 app:layout_constraintStart_toEndOf="@+id/pro_id_txt"
                 app:layout_constraintTop_toBottomOf="@+id/pro_nama_txt" />
 
@@ -63,6 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:text="1"
+                android:layout_marginLeft="2dp"
                 app:layout_constraintStart_toEndOf="@+id/jumlah"
                 app:layout_constraintTop_toBottomOf="@+id/pro_nama_txt" />
 
@@ -72,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
-                android:text="Price : "
+                android:text="Price            : "
                 app:layout_constraintStart_toEndOf="@+id/pro_id_txt"
                 app:layout_constraintTop_toBottomOf="@+id/pro_quantity_txt" />
 

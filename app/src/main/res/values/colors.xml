@@ -3,12 +3,12 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="merah">#d92027</color>
-    <color name="ungu">#8338ec</color>
-    <color name="pink">#ff006e</color>
-    <color name="biru">#4361ee</color>
-    <color name="kuning">#ffca3a</color>
-    <color name="hijau">#8ac926</color>
+    <color name="merah">#F47C7C</color>
+    <color name="merah2">#FB6962</color>
+    <color name="biru2">#1974D1</color>
+    <color name="biru">#70A1D7</color>
+    <color name="coklat2">#A36F58</color>
+    <color name="coklat">#C9855B</color>
     <color name="putih">#faf9f9</color>
     <color name="hitam">#30343f</color>
 </resources>
