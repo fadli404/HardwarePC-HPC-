@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@color/merah">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@mipmap/gambarnote"
         android:layout_centerInParent="true"
-        android:text="LOGO"
-        android:textSize="50dp"
         />
+
 </RelativeLayout>

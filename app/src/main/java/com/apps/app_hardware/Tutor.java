@@ -44,8 +44,8 @@ public class Tutor extends AppCompatActivity {
         btnAnim = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.button_animation);
 
         final List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("CONTOH1","WKWKWKWKWKWKWKWKWKWKWKWKKWWKWK",R.drawable.profile_putih));
-        mList.add(new ScreenItem("CONTOH2","HEHEHEHEHEHEHEHEHEHEHEHEHEHEHE",R.drawable.music_putih));
+        mList.add(new ScreenItem("Mudah Digunakan","Buat List Belanja Hardwaremu!",R.drawable.keranjang));
+        mList.add(new ScreenItem("Fitur","Tambah, Edit, Hapus Sesuka Hati",R.drawable.senyum));
         mList.add(new ScreenItem("Semoga Bermanfaat","#DirumahAja",R.drawable.ceklis));
 
         screenPager = findViewById(R.id.screen_viewpager);
